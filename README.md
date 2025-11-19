@@ -1,0 +1,37 @@
+# MIDTERM PROJECT
+# CONTENT
+Bank Customer Attrition Insights dataset.
+trained model.
+predict script.
+EDA AND TRAINING NOTEBOOK.
+DOCKERFILE.
+PIPFILE.
+PIPLOCK FILE.
+
+# INTRO ON THE  DATASET
+Dataset Overview for XYZ Multistate Bank:
+
+This dataset is for XYZ Multistate Bank and contains various columns that capture key aspects of customer behavior and attributes. Each column provides valuable insights into the factors influencing customer churn, with the goal of predicting which customers are most likely to leave the bank.
+# Description of the dataset columns.
+The "CustomerId" column consists of randomly generated identifiers for each customer.
+The "Surname" column holds the last names of customers. 
+"CreditScore" is an important variable that can significantly affect customer churn. Customers with higher credit scores are generally considered more financially stable and less likely to leave the bank, as they are less likely to face issues with financial institutions. Therefore, this feature can provide valuable insights into customer retention and should be included in churn analysis.
+"Geography" refers to the geographical location of the customer, which can influence their likelihood of leaving the bank. Customers living in different regions may have varying experiences with the bank’s services, fees, or offerings, making this an important factor to explore. Understanding regional differences helps tailor retention strategies for specific locations and improve overall customer satisfaction.
+"Gender" is an interesting demographic factor to consider in churn prediction. While gender itself may not directly affect the likelihood of a customer leaving, it could correlate with other behavioral patterns or preferences that influence retention. Analyzing gender in combination with other features may reveal potential insights, making it worthwhile to examine as part of the churn model.
+The "Age" column is a key factor in understanding customer behavior. Typically, older customers are less likely to churn because they tend to be more established with their financial institutions and may have a greater sense of loyalty. In contrast, younger customers may be more likely to switch banks, especially if they are seeking better services or offers. This feature is essential for predicting churn and should be analyzed in detail.enure:
+"Tenure" refers to the number of years a customer has been with the bank. Longer-tenured customers are often more loyal and less likely to leave the bank. The correlation between tenure and churn is strong, as established relationships tend to make customers less susceptible to leaving. This is a critical factor for churn prediction and should be given high consideration when modeling customer retention.
+The "Balance" column reflects the amount of money a customer holds in their bank account. Customers with higher balances are typically more invested in the bank and are less likely to leave. In contrast, customers with low balances may be more willing to switch to other financial institutions offering better rates or services. This feature plays a significant role in churn prediction, as financial stakes are directly tied to loyalty.
+"NumOfProducts" refers to the number of products (e.g., savings accounts, loans, credit cards) that a customer has with the bank. Customers with multiple products are usually more invested in the bank, making them less likely to leave. The greater the number of products, the higher the customer's commitment to the bank, making this feature highly relevant in understanding churn patterns and developing retention strategies.
+"HasCrCard" indicates whether or not a customer holds a credit card with the bank. Having a credit card typically reduces the likelihood of customer churn, as credit cards are a widely used financial product that locks customers into a long-term relationship with the bank. This feature is important for churn prediction and can help identify customers at risk of leaving who may have fewer products or services with the bank.
+The "IsActiveMember" column indicates whether a customer actively engages with the bank's services. Active members who frequently use the bank's products and services are generally less likely to leave. This feature is crucial for churn prediction, as engagement is often a direct indicator of a customer’s likelihood to remain loyal to the bank. It is a key factor for identifying at-risk customers.
+"EstimatedSalary" represents the customer’s estimated annual salary. Higher earners are typically more financially stable and thus less likely to churn, as they may have a higher perceived value of banking services. In contrast, customers with lower salaries may seek alternative financial institutions offering better terms or benefits. This feature is important in predicting churn, as it correlates with both customer retention and loyalty.
+The "Exited" column is the target variable in the dataset, indicating whether a customer has left the bank (1) or remained (0). The model aims to predict this binary outcome, making it the most crucial variable in the churn analysis. Understanding the factors that contribute to a customer exiting the bank helps identify areas for improvement in retention efforts.
+The "Complain" column shows whether or not a customer has filed a complaint with the bank. Complaints often signal dissatisfaction with services, which could increase the likelihood of a customer leaving. Analyzing complaint data helps the bank identify pain points and address them to reduce churn. This feature is significant for churn prediction, as unhappy customers are at a higher risk of exiting.
+The "Satisfaction Score" represents how satisfied a customer is with the bank's complaint resolution process. A higher satisfaction score indicates that the customer is content with how their issue was handled, making them less likely to churn. Conversely, low satisfaction scores are red flags that may suggest the customer is dissatisfied, which increases the risk of churn. This feature is valuable for predicting customer retention based on their service experiences.
+"Card Type" refers to the type of credit card a customer holds, such as a standard, premium, or rewards card. The type of card can influence a customer’s loyalty to the bank, as more rewarding card options may encourage customers to stay. This feature helps identify customers who are using value-driven products and may offer insights into the relationship between card types and churn.
+"Points Earned" shows the loyalty points a customer has accumulated through the use of their credit card. Customers who earn more points are typically more engaged with the bank’s products and services, making them less likely to churn. This feature is a good indicator of customer activity and satisfaction, and it can provide valuable insights into retention efforts and the effectiveness of loyalty programs.
+#PROBLEM STATEMENT.
+I want to use the dataset to make a model that I will be using to determine when a client is likely to exit the bank services or not.
+#I want to train it on three models decision tree classifiers, logistic regression,random forest classifier and xgboost later I have chosen decision tree classifier as my preffered model.
+#INSTRUCTIONS
+I have placed the docker file for easy download and using of the model locally to make predictions after carrying out extensive work on it.
